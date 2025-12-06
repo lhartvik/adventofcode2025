@@ -2,7 +2,7 @@ import java.io.File
 import kotlin.math.max
 
 fun main() {
-    val banks = File("input3.txt").readLines()
+    val banks = File("example3.txt").readLines()
     var sum = 0L
     var n = 0
     for (bank in banks) {

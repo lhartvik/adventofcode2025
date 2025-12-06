@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main(){
-    val lines = File("input5.txt").readLines()
+    val lines = File("example5.txt").readLines()
 
     val freshranges = lines.filter { it.contains("-")}.map { Range (it) }
     val products = lines.filter { !it.contains("-") && it.isNotBlank()}.map { it.toLong() }

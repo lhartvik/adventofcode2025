@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    val floor: List<List<Int>> = File("input4.txt").readLines()
+    val floor: List<List<Int>> = File("example4.txt").readLines()
         .map { it.toList().map { if (it == '@') 1 else 0 }}
 
     floor.forEach { println(it) }

@@ -1,12 +1,12 @@
 import java.io.File
 
 //val filename = "input2_example.txt"
-val filename = "input2.txt"
+val filename = "example2.txt"
 
 fun main() {
     val lines = File(filename).readLines()
     var score = 0L
-    lines[0].split(",").forEach { s ->
+    lines[0].split(",").filter{it.isNotBlank()}.forEach { s ->
         println(s)
         val start = s.split("-").first()
         val end = s.split("-").last()

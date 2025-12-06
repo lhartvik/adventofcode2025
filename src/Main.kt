@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    calculateFile("input_example.txt")
+    calculateFile("example1.txt")
 }
 
 fun calculateFile(filename: String) {
